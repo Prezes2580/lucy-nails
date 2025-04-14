@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucy Nails & Beauty</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background-color: #fdf6f0;
+      color: #4b2c2c;
+    }
+    header {
+      position: relative;
+      background-image: url('https://images.unsplash.com/photo-1604147706284-60f3b8cbe84c?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      color: #ffffff;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0,0,0,0.4);
+      z-index: 1;
+    }
+    header h1, header p, .book-button {
+      position: relative;
+      z-index: 2;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3.5rem;
+      text-shadow: 2px 2px 8px #000;
+    }
+    header p {
+      font-size: 1.5rem;
+      margin-top: 10px;
+      text-shadow: 1px 1px 5px #000;
+    }
+    .book-button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #b76e79;
+      color: #fff;
+      padding: 10px 25px;
+      border-radius: 25px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+    nav {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+      font-size: 1.2rem;
+      border-bottom: 2px solid #d4a5a5;
+    }
+    nav a {
+      color: #b76e79;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    section {
+      margin-bottom: 60px;
+    }
+    h2 {
+      color: #b76e79;
+      border-left: 5px solid #d4a5a5;
+      padding-left: 15px;
+    }
+    ul {
+      list-style: square;
+      padding-left: 40px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      font-size: 1rem;
+      border-top: 2px solid #d4a5a5;
+      color: #b76e79;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lucy Nails & Beauty</h1>
+    <p>Poczuj się pięknie każdego dnia 💖</p>
+    <a href="#kontakt" class="book-button">Umów wizytę</a>
+  </header>
+
+  <nav>
+    <a href="#o-mnie">O mnie</a>
+    <a href="#uslugi">Usługi</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <main>
+    <section id="o-mnie">
+      <h2>O mnie</h2>
+      <p>Mam na imię <strong>Lucyna</strong> i od wielu lat zajmuję się stylizacją paznokci — to nie tylko moja praca, ale przede wszystkim pasja. Tworzę miejsce, w którym każda kobieta może poczuć się wyjątkowo, pięknie i zadbanie.</p>
+      <p>Dzięki wieloletniemu doświadczeniu, ciągłemu doszkalaniu oraz gronu zadowolonych klientek, wiem, jak zadbać o każdy detal – od perfekcyjnego kształtu paznokcia po subtelne zdobienie, które podkreśli Twój styl.</p>
+      <p>Jeśli szukasz miejsca, gdzie liczy się jakość, estetyka i dobra atmosfera — jesteś we właściwym miejscu!</p>
+    </section>
+
+    <section id="uslugi">
+      <h2>Usługi</h2>
+      <ul>
+        <li>Manicure hybrydowy</li>
+        <li>Stylizacja paznokci żelowych</li>
+        <li>Manicure klasyczny</li>
+        <li>Zdobienia artystyczne</li>
+      </ul>
+    </section>
+
+    <section id="galeria">
+      <h2>Galeria</h2>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1616594039964-539c17d40cda?auto=format&fit=crop&w=800&q=80" alt="Stylizacja 1" />
+        <img src="https://images.unsplash.com/photo-1618141032585-9db6d5577094?auto=format&fit=crop&w=800&q=80" alt="Stylizacja 2" />
+        <img src="https://images.unsplash.com/photo-1607082349566-d978d983d65b?auto=format&fit=crop&w=800&q=80" alt="Stylizacja 3" />
+        <img src="https://images.unsplash.com/photo-1625863968384-56f8b4a7274f?auto=format&fit=crop&w=800&q=80" alt="Stylizacja 4" />
+      </div>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p>📞 Telefon: <strong>+48 123 456 789</strong></p>
+      <p>📍 Adres: ul. Kwiatowa 12, Kraków</p>
+      <p>📧 E-mail: <strong>kontakt@lucynails.pl</strong></p>
+      <p>📱 Instagram: <strong>@lucynails_beauty</strong></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Lucy Nails & Beauty. Wszystkie prawa zastrzeżone.
+  </footer>
+</body>
+</html>
